@@ -7,17 +7,19 @@ function MeetupDetails(props) {
     return (
         <Fragment>
             <Head>
-                <title>{props.meetupData.title}</title>
+                <title>{props.meetupData?.title || "Detail Page"}</title>
                 <meta
                     name="description"
-                    content={props.meetupData.description}
+                    content={
+                        props.meetupData?.description || "Detail Description"
+                    }
                 />
             </Head>
             <MeetupDetail
-                image={props.meetupData.image}
-                title={props.meetupData.title}
-                address={props.meetupData.address}
-                description={props.meetupData.description}
+                image={props.meetupData?.image || "image"}
+                title={props.meetupData?.title || "title"}
+                address={props.meetupData?.address || "address"}
+                description={props.meetupData?.description || "description"}
             />
         </Fragment>
     );

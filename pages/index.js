@@ -62,7 +62,7 @@ export async function getStaticProps() {
                 id: meetup._id.toString(),
             })),
         },
-        revalidate: 3600, // incremental static generation(number of seconds to wait for before nextjs regenerating the page till incoming request)
+        revalidate: 10, // incremental static generation(number of seconds to wait for before nextjs regenerating the page till incoming request)
     }; // we need to always return object in here, and object 'props' must be props
 }
 

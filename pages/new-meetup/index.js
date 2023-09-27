@@ -26,7 +26,7 @@ function NewMeetupPage() {
                 <title>Add a New Meetup</title>
                 <meta name="description" content="Insert new data" />
             </Head>
-            <NewMeetupForm onAddMeetup={addMeetupHandler} />;
+            <NewMeetupForm onAddMeetup={addMeetupHandler} />
         </Fragment>
     );
 }

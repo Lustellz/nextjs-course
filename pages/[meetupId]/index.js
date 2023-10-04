@@ -58,7 +58,7 @@ export async function getStaticPaths() {
         //         },
         //     },
         // ],
-        fallback: true, // this means we listed the whole of pages <-> true: the pages would be dynamic
+        fallback: true, // this means we listed the whole of pages <-> true / 'blocking': the pages would be dynamic
     };
 }
 
